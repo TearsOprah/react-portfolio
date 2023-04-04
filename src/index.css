@@ -4,6 +4,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-}
 
+  /* 1 theme colors example */
+  --primary-color: #0077FF;
+  --secondary-color: #FFD600;
+  --brand-color: #0077FF;
+  --accent-color: #FFD600;
+  --main-color: #0077FF;
+  --highlight-color: #FFD600;
+  --base-color: #0077FF;
+  --complementary-color: #FFD600;
+}
 

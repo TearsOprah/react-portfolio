@@ -1,9 +1,10 @@
 import {useState, useEffect} from "react";
 import './Header.scss'
+import {Link} from "react-router-dom";
 
 const navLinks = [
   { title: "Home", path: "/" },
-  { title: "About", path: "/about" },
+  { title: "Projects", path: "/projects" },
   { title: "Contact", path: "/contact" },
 ];
 
@@ -38,9 +39,9 @@ export default function Header() {
           <ul className={`nav__list ${isOpenMenu ? "nav__list--open" : ""}`}>
             {navLinks.map((link, index) => (
               <li className="nav__item" key={index}>
-                <a href={link.path} className="nav__link">
+                <Link to={link.path} className="nav__link">
                   {link.title}
-                </a>
+                </Link>
               </li>
             ))}
             <button type="button">тема</button>
