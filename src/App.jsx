@@ -6,6 +6,7 @@ import NotFound from "./components/NotFound/NotFound";
 import Contacts from "./components/Contacts/Contacts";
 import Footer from "./components/Footer/Footer";
 import {useState} from "react";
+import './App.css'
 
 function App() {
 
@@ -13,16 +14,16 @@ function App() {
   const [currentLang, setCurrentLang] = useState('ru')
 
   return (
-    <>
+    <div className="wrapper">
       <Header setCurrentLang={setCurrentLang} currentLang={currentLang} />
       <Routes>
         <Route path={'/'} element={<Home currentLang={currentLang} />} />
-        <Route path={'/projects'} element={<Projects />} />
+        <Route path={'/projects'} element={<Projects currentLang={currentLang} />} />
         <Route path={'/contacts'} element={<Contacts />} />
         <Route path={'*'} element={<NotFound />} />
       </Routes>
       <Footer />
-    </>
+    </div>
   )
 }
 

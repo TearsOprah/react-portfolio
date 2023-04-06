@@ -34,15 +34,18 @@ export default function Header({setCurrentLang, currentLang}) {
 
   return (
     <header className="header">
+
       <div className={'header__branding'}>
-        <h1>TearsOprah</h1>
+        <h2>TearsOprah</h2>
         <div>Logo</div>
       </div>
+
       <nav className="nav">
 
           <button className="menu-icon" onClick={handleMenuClick}>
             Меню
           </button>
+
           <ul className={`nav__list ${isOpenMenu ? "nav__list--open" : ""}`}>
             {navLinks.map((link, index) => (
               <li className="nav__item" key={index}>
