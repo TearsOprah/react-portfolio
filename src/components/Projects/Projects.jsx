@@ -1,5 +1,5 @@
 export default function Projects() {
   return (
-    <h2>Все проекты</h2>
+    <h2>All projects</h2>
   )
 }

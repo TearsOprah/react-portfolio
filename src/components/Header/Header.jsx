@@ -1,14 +1,16 @@
 import {useState, useEffect} from "react";
 import './Header.scss'
 import {Link} from "react-router-dom";
+import texts from "../../utils/texts.js";
 
-const navLinks = [
-  { title: "Home", path: "/" },
-  { title: "Projects", path: "/projects" },
-  { title: "Contact", path: "/contact" },
-];
+export default function Header({setCurrentLang, currentLang}) {
 
-export default function Header() {
+  const navLinks = [
+    { title: texts[currentLang].home, path: "/" },
+    { title: texts[currentLang].projects, path: "/projects" },
+    { title: texts[currentLang].contacts, path: "/contacts" },
+  ];
+
   const [isOpenMenu, setIsOpenMenu] = useState(false);
 
   const handleMenuClick = () => {
@@ -25,10 +27,15 @@ export default function Header() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // смена языка
+  const handleLang = () => {
+    currentLang === 'ru' ? setCurrentLang('en') : setCurrentLang('ru')
+  }
+
   return (
     <header className="header">
       <div className={'header__branding'}>
-        <h1>Заголовок</h1>
+        <h1>TearsOprah</h1>
         <div>Logo</div>
       </div>
       <nav className="nav">
@@ -45,7 +52,7 @@ export default function Header() {
               </li>
             ))}
             <button type="button">тема</button>
-            <button type="button">язык</button>
+            <button type="button" onClick={handleLang}>{currentLang}</button>
           </ul>
 
       </nav>
