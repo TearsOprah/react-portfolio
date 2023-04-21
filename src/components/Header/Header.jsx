@@ -1,36 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import texts from "../../utils/texts.js";
 import "./Header.scss";
 
-export default function Header({ setCurrentLang, currentLang }) {
+export default function Header({ setCurrentLang,
+                                 currentLang,
+                                 activeLink,
+                                 handleLinkClick,
+                                 handleMenuClick,
+                                 isOpenMenu }) {
   const navLinks = [
     { title: texts[currentLang].home, path: "/", color: "red" },
     { title: texts[currentLang].projects, path: "/projects", color: "green" },
     { title: texts[currentLang].contacts, path: "/contacts", color: "blue" },
   ];
-
-  const [isOpenMenu, setIsOpenMenu] = useState(false);
-  const [activeLink, setActiveLink] = useState(window.location.pathname);
-
-  const handleLinkClick = (link) => {
-    setIsOpenMenu(false);
-    setActiveLink(link.path)
-  }
-
-  const handleMenuClick = () => {
-    setIsOpenMenu(!isOpenMenu);
-  };
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth > 600) {
-        setIsOpenMenu(false);
-      }
-    };
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   const handleLang = () => {
     currentLang === "ru" ? setCurrentLang("en") : setCurrentLang("ru");
@@ -63,7 +46,7 @@ export default function Header({ setCurrentLang, currentLang }) {
               <Link
                 to={link.path}
                 className={`nav__link`}
-                onClick={() => handleLinkClick(link)}
+                onClick={() => handleLinkClick(link.path)}
               >
                 {link.title}
               </Link>

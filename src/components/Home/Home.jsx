@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import projects from "../../utils/projects.js";
 import "./Home.scss"
 
-export default function Home({currentLang}) {
+export default function Home({ currentLang, handleLinkClick }) {
   return (
     <main>
       <div className={'presentation-container'}>
@@ -21,7 +21,7 @@ export default function Home({currentLang}) {
       <section className="projects-container">
         <div className="projects-header">
           <h2>{texts[currentLang].projects}</h2>
-          <Link className="projects-link" to={'/projects'}>{texts[currentLang].linkToProjects}</Link>
+          <Link className="projects-link" onClick={() => handleLinkClick('/projects')} to={'/projects'}>{texts[currentLang].linkToProjects}</Link>
         </div>
         <div className="projects-list">
           {projects.slice(3).reverse().map((project, i) => <div key={i} className="project-title">{project.title}</div>)}

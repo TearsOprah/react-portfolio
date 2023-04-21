@@ -43,11 +43,15 @@
 }
 
 .projects-header {
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .projects-link {
-
+  color: var(--text-color);
+  font-weight: 300;
+  font-size: 18px;
 }
 
 .projects-list {
