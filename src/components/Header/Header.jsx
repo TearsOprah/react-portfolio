@@ -13,6 +13,11 @@ export default function Header({ setCurrentLang, currentLang }) {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const [activeLink, setActiveLink] = useState(window.location.pathname);
 
+  const handleLinkClick = (link) => {
+    setIsOpenMenu(false);
+    setActiveLink(link.path)
+  }
+
   const handleMenuClick = () => {
     setIsOpenMenu(!isOpenMenu);
   };
@@ -58,7 +63,7 @@ export default function Header({ setCurrentLang, currentLang }) {
               <Link
                 to={link.path}
                 className={`nav__link`}
-                onClick={() => setActiveLink(link.path)}
+                onClick={() => handleLinkClick(link)}
               >
                 {link.title}
               </Link>
