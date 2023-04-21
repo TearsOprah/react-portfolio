@@ -1,0 +1,67 @@
+.presentation-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+  }
+}
+
+.presentation-name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 50px;
+}
+
+.presentation-button {
+  background-color: transparent;
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 20px;
+  padding: 6px;
+  border: 1px solid var(--accent-color);
+  cursor: pointer;
+}
+
+.presentation-tagline {
+  color: var(--complementary-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  margin: 30px 0;
+}
+
+.presentation-image {
+  width: 400px;
+}
+
+.projects-container {
+
+}
+
+.projects-header {
+
+}
+
+.projects-link {
+
+}
+
+.projects-list {
+
+}
+
+.contacts-container {
+
+}
+
+.contacts-description {
+
+}
+
+.contacts-list {
+
+}

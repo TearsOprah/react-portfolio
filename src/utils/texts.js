@@ -9,7 +9,7 @@ const texts = {
     madeBy: 'Made by TearsOprah',
     aboutMe: '',
     linkToProjects: 'View all',
-
+    tagline: 'Adventures in Code: My Journey in Web Development',
   },
   ru: {
     home: "Главная",
@@ -21,6 +21,7 @@ const texts = {
     madeBy: 'Сделано TearsOprah',
     aboutMe: '',
     linkToProjects: 'Посмотреть все',
+    tagline: 'Приключения в коде: мое путешествие в веб-разработке',
   },
 }
 
