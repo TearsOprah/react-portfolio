@@ -1,7 +1,7 @@
 const projects = [
   {
     'title': 'Название первого проекта',
-    'image': '',
+    'image': 'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/698af566494985.5b17eccacd7cf.jpg',
     'description': '',
     'demoLink': '',
     'codeLink': '',
@@ -9,7 +9,7 @@ const projects = [
   },
   {
     'title': 'Название второго проекта',
-    'image': '',
+    'image': 'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/698af566494985.5b17eccacd7cf.jpg',
     'description': '',
     'demoLink': '',
     'codeLink': '',
@@ -17,7 +17,7 @@ const projects = [
   },
   {
     'title': 'Название третьего проекта',
-    'image': '',
+    'image': 'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/698af566494985.5b17eccacd7cf.jpg',
     'description': '',
     'demoLink': '',
     'codeLink': '',
@@ -25,7 +25,7 @@ const projects = [
   },
   {
     'title': 'Название четвертого проекта',
-    'image': '',
+    'image': 'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/698af566494985.5b17eccacd7cf.jpg',
     'description': '',
     'demoLink': '',
     'codeLink': '',
@@ -33,7 +33,7 @@ const projects = [
   },
   {
     'title': 'Название пятого проекта',
-    'image': '',
+    'image': 'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/698af566494985.5b17eccacd7cf.jpg',
     'description': '',
     'demoLink': '',
     'codeLink': '',
@@ -41,7 +41,7 @@ const projects = [
   },
   {
     'title': 'Название шестого проекта',
-    'image': '',
+    'image': 'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/698af566494985.5b17eccacd7cf.jpg',
     'description': '',
     'demoLink': '',
     'codeLink': '',

@@ -54,7 +54,7 @@ function App() {
         <Route path={'/contacts'} element={<Contacts />} />
         <Route path={'*'} element={<NotFound />} />
       </Routes>
-      <Footer />
+      <Footer currentLang={currentLang} />
     </div>
   )
 }

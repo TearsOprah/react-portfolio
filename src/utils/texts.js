@@ -10,6 +10,7 @@ const texts = {
     aboutMe: '',
     linkToProjects: 'View all',
     tagline: 'Adventures in Code: My Journey in Web Development',
+    media: 'Media',
   },
   ru: {
     home: "Главная",
@@ -18,10 +19,11 @@ const texts = {
     name: 'Михаил Головешкин',
     profession: 'front-end разработчик',
     contactButton: 'Связаться со мной',
-    madeBy: 'Сделано TearsOprah',
+    madeBy: 'Выполнил TearsOprah',
     aboutMe: '',
     linkToProjects: 'Посмотреть все',
     tagline: 'Приключения в коде: мое путешествие в веб-разработке',
+    media: 'Медиа',
   },
 }
 
