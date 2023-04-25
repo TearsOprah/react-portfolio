@@ -30,7 +30,7 @@ export default function Footer({currentLang}) {
 
       </div>
 
-      <p className={'footer__copyright'}>{`${texts[currentLang].madeBy}. ${new Date().getFullYear()}`}</p>
+      <p className={'footer__copyright'}>{`© ${texts[currentLang].madeBy}. ${new Date().getFullYear()}`}</p>
 
     </footer>
   )
