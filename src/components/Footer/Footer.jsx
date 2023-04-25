@@ -1,6 +1,7 @@
 import texts from "../../utils/texts.js";
 import React from "react";
 import './Footer.scss';
+import imgLogo from "../../assets/logo_m.png";
 
 export default function Footer({currentLang}) {
   return (
@@ -12,7 +13,7 @@ export default function Footer({currentLang}) {
           <div className={'footer__info'}>
             <div className={'footer__branding'}>
               <h2 className={"footer__title"}>TearsOprah</h2>
-              <div className={"footer__logo"}>Logo</div>
+              <img className={"footer__logo"} src={imgLogo}/>
             </div>
             <p className={'footer__email'}>qmeshokp@mail.ru</p>
           </div>

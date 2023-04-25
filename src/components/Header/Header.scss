@@ -16,6 +16,10 @@
   }
 }
 
+.header__logo {
+  width: 60px;
+}
+
 .header__title {
   font-style: normal;
   font-weight: 600;
@@ -75,9 +79,10 @@
 }
 
 .nav__link {
+  text-transform: lowercase;
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 18px;
   color: var(--text-color);
 
   @media screen and (max-width: 900px) {

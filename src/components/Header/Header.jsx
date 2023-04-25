@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import texts from "../../utils/texts.js";
 import "./Header.scss";
+import imgLogo from '../../assets/logo_m.png'
 
 export default function Header({ setCurrentLang,
                                  currentLang,
@@ -23,7 +24,7 @@ export default function Header({ setCurrentLang,
     <header className="header">
       <div className={"header__branding"}>
         <h2 className={"header__title"}>TearsOprah</h2>
-        <div className={"header__logo"}>Logo</div>
+        <img className={"header__logo"} src={imgLogo}/>
       </div>
 
       <nav className="nav">

@@ -34,10 +34,11 @@
 
 .footer__branding {
   display: flex;
+  align-items: center;
 }
 
 .footer__title {
-
+  font-size: 20px;
 }
 
 .footer__email {
@@ -45,7 +46,7 @@
 }
 
 .footer__logo {
-
+  width: 40px;
 }
 
 .footer__links-title {
