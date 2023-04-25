@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import texts from "../../utils/texts.js";
 import "./Header.scss";
-import imgLogo from '../../assets/logo_m.png'
+import imgLogoBlack from '../../assets/black.gif'
+import imgLogoWhite from '../../assets/white.gif'
 
 export default function Header({ setCurrentLang,
                                  currentLang,
@@ -24,7 +25,7 @@ export default function Header({ setCurrentLang,
     <header className="header">
       <div className={"header__branding"}>
         <h2 className={"header__title"}>TearsOprah</h2>
-        <img className={"header__logo"} src={imgLogo}/>
+        <img className={"header__logo"} src={imgLogoWhite}/>
       </div>
 
       <nav className="nav">

@@ -1,3 +1,9 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
 .presentation-container {
   display: flex;
   align-items: center;
@@ -21,7 +27,8 @@
   font-weight: 400;
   font-size: 20px;
   padding: 6px;
-  border: 1px solid var(--accent-color);
+  border: 2px dashed var(--text-color);
+  border-radius: 15px;
   cursor: pointer;
 }
 
@@ -39,7 +46,9 @@
 }
 
 .projects-container {
-
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .projects-header {
@@ -69,7 +78,9 @@
 }
 
 .projects-list-item {
-
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .project-image {

@@ -1,7 +1,7 @@
 import texts from "../../utils/texts.js";
 import React from "react";
 import './Footer.scss';
-import imgLogo from "../../assets/logo_m.png";
+import imgLogo from "../../assets/white.gif";
 
 export default function Footer({currentLang}) {
   return (

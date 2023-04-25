@@ -2,10 +2,11 @@ import texts from "../../utils/texts.js";
 import {Link} from "react-router-dom";
 import projects from "../../utils/projects.js";
 import "./Home.scss"
+import birdsImg from "../../assets/birds.png"
 
 export default function Home({ currentLang, handleLinkClick }) {
   return (
-    <main>
+    <main className={'home'}>
       <div className={'presentation-container'}>
         <div className={'presentation-info'}>
           <h1 className={'presentation-name'}>{`${texts[currentLang].name}`}</h1>
@@ -14,7 +15,7 @@ export default function Home({ currentLang, handleLinkClick }) {
           <button className={'presentation-button'}>{texts[currentLang].contactButton}</button>
         </div>
         <div>
-          <img className={'presentation-image'} src={'https://i.pinimg.com/originals/42/e5/bc/42e5bcb99c7dd3f93a652df702bc33b1.png'} alt={'portfolio author photo'} />
+          <img className={'presentation-image'} src={birdsImg} alt={'portfolio author photo'} />
         </div>
       </div>
 
