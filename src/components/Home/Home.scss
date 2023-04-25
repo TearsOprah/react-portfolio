@@ -61,6 +61,9 @@
   color: var(--text-color);
   font-weight: 300;
   font-size: 18px;
+  padding: 6px;
+  border: 2px dashed var(--text-color);
+  border-radius: 15px;
 }
 
 .projects-list {

@@ -34,11 +34,13 @@
 
 .header__button {
   color: var(--text-color);
-  border: none;
   background-color: transparent;
   font-weight: 400;
   font-size: 22px;
   cursor: pointer;
+  padding: 6px;
+  border: 2px dashed var(--text-color);
+  border-radius: 15px;
 }
 
 .nav {
