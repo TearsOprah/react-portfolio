@@ -7,6 +7,7 @@ import Contacts from "./components/Contacts/Contacts";
 import Footer from "./components/Footer/Footer";
 import {useState, useEffect} from "react";
 import './App.css'
+import Canvas from "./components/Canvas/Canvas.jsx";
 
 function App() {
 
@@ -38,24 +39,29 @@ function App() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // рисовалка
+
   return (
-    <div className="wrapper">
-      <Header setCurrentLang={setCurrentLang}
-              currentLang={currentLang}
-              isOpenMenu={isOpenMenu}
-              activeLink={activeLink}
-              handleLinkClick={handleLinkClick}
-              handleMenuClick={handleMenuClick}
-      />
-      <Routes>
-        <Route path={'/'} element={<Home currentLang={currentLang}
-                                         handleLinkClick={handleLinkClick} />} />
-        <Route path={'/projects'} element={<Projects currentLang={currentLang} />} />
-        <Route path={'/contacts'} element={<Contacts />} />
-        <Route path={'*'} element={<NotFound />} />
-      </Routes>
-      <Footer currentLang={currentLang} />
-    </div>
+    <>
+      <Canvas />
+      <div className="wrapper">
+        <Header setCurrentLang={setCurrentLang}
+                currentLang={currentLang}
+                isOpenMenu={isOpenMenu}
+                activeLink={activeLink}
+                handleLinkClick={handleLinkClick}
+                handleMenuClick={handleMenuClick}
+        />
+        <Routes>
+          <Route path={'/'} element={<Home currentLang={currentLang}
+                                           handleLinkClick={handleLinkClick} />} />
+          <Route path={'/projects'} element={<Projects currentLang={currentLang} />} />
+          <Route path={'/contacts'} element={<Contacts />} />
+          <Route path={'*'} element={<NotFound />} />
+        </Routes>
+        <Footer currentLang={currentLang} />
+      </div>
+    </>
   )
 }
 

@@ -3,6 +3,8 @@ body {
 }
 
 .wrapper {
+  position: relative;
+  z-index: 1;
   max-width: 1000px;
   margin: 0 auto;
   /*background-color: var(--background-second-color);*/
