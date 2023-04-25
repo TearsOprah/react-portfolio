@@ -26,10 +26,6 @@
   color: var(--text-color);
   font-weight: 400;
   font-size: 20px;
-  padding: 6px;
-  border: 2px dashed var(--text-color);
-  border-radius: 15px;
-  cursor: pointer;
 }
 
 .presentation-tagline {
@@ -61,9 +57,6 @@
   color: var(--text-color);
   font-weight: 300;
   font-size: 18px;
-  padding: 6px;
-  border: 2px dashed var(--text-color);
-  border-radius: 15px;
 }
 
 .projects-list {
@@ -100,4 +93,16 @@
 
 .contacts-list {
 
+}
+
+.button {
+  padding: 6px;
+  border: 2px dashed var(--text-color);
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all .6s;
+}
+
+.button:hover {
+  color: var(--highlight-color);
 }

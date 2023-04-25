@@ -12,7 +12,7 @@ export default function Home({ currentLang, handleLinkClick }) {
           <h1 className={'presentation-name'}>{`${texts[currentLang].name}`}</h1>
           <p className={'presentation-name'}>{`${texts[currentLang].profession}`}</p>
           <p className={'presentation-tagline'}>{`${texts[currentLang].tagline}`}</p>
-          <button className={'presentation-button'}>{texts[currentLang].contactButton}</button>
+          <button className={'presentation-button button'}>{texts[currentLang].contactButton}</button>
         </div>
         <div>
           <img className={'presentation-image'} src={birdsImg} alt={'portfolio author photo'} />
@@ -22,7 +22,7 @@ export default function Home({ currentLang, handleLinkClick }) {
       <section className="projects-container">
         <div className="projects-header">
           <h2>{texts[currentLang].projects}</h2>
-          <Link className="projects-link" onClick={() => handleLinkClick('/projects')} to={'/projects'}>{texts[currentLang].linkToProjects}</Link>
+          <Link className="projects-link button" onClick={() => handleLinkClick('/projects')} to={'/projects'}>{texts[currentLang].linkToProjects}</Link>
         </div>
         <div className="projects-list">
           {projects.slice(3).reverse().map((project, i) =>

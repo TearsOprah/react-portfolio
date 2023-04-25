@@ -55,7 +55,7 @@ export default function Header({ setCurrentLang,
             </li>
           ))}
           <button
-            className={"header__button"}
+            className={"header__button button"}
             type="button"
             onClick={handleLang}
           >
