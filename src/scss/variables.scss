@@ -3,12 +3,27 @@
   --background-second-color: #22242c;
   --text-color: #FFFFFF;
   --accent-color: #C778DD;
-  --complementary-color: #ABB2BF;
+  --complementary-color: #FFFFFF;
 
-  --primary-color: #0077FF;
-  --secondary-color: #FFD600;
-  --brand-color: #0077FF;
-  --main-color: #0077FF;
-  --highlight-color: #FFD600;
-  --base-color: #0077FF;
+/*#
+// страрые цвета для темной темы
+//
+//--background-main-color: #282C33;
+//--background-second-color: #22242c;
+//--text-color: #FFFFFF;
+//--accent-color: #C778DD;
+//--complementary-color: #ABB2BF;
+*/
+
+--primary-color: #0077FF;
+--secondary-color: #FFD600;
+--brand-color: #0077FF;
+--main-color: #0077FF;
+--highlight-color: #FFD600;
+--base-color: #0077FF;
+
+
+--b-p-bg: linear-gradient(to bottom, var(--blue), var(--purple));
+--blue: #a9cedd;
+--purple: #ae79f1;
 }
