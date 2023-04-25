@@ -45,7 +45,7 @@ const projects = [
     'description': {'ru': 'Описание первого проекта', 'en': 'Description 1 project'},
     'demoLink': '',
     'codeLink': '',
-    'stack': ['JS', 'React', 'БЭМ', ]
+    'stack': ['JS', 'React', 'БЭМ', ],
   },
 ]
 
