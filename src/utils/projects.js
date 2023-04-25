@@ -1,48 +1,48 @@
 const projects = [
   {
-    'title': 'Название первого проекта',
+    'title': {'ru': 'Название первого проекта', 'en': 'Name 1 project'},
     'image': 'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/698af566494985.5b17eccacd7cf.jpg',
-    'description': '',
+    'description': {'ru': 'Описание первого проекта', 'en': 'Description 1 project'},
     'demoLink': '',
     'codeLink': '',
     'stack': ['JS', 'React', 'БЭМ', ]
   },
   {
-    'title': 'Название второго проекта',
+    'title': {'ru': 'Название первого проекта', 'en': 'Name 1 project'},
     'image': 'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/698af566494985.5b17eccacd7cf.jpg',
-    'description': '',
+    'description': {'ru': 'Описание первого проекта', 'en': 'Description 1 project'},
     'demoLink': '',
     'codeLink': '',
     'stack': ['JS', 'React', 'БЭМ', ]
   },
   {
-    'title': 'Название третьего проекта',
+    'title': {'ru': 'Название первого проекта', 'en': 'Name 1 project'},
     'image': 'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/698af566494985.5b17eccacd7cf.jpg',
-    'description': '',
+    'description': {'ru': 'Описание первого проекта', 'en': 'Description 1 project'},
     'demoLink': '',
     'codeLink': '',
     'stack': ['JS', 'React', 'БЭМ', ]
   },
   {
-    'title': 'Название четвертого проекта',
+    'title': {'ru': 'Название первого проекта', 'en': 'Name 1 project'},
     'image': 'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/698af566494985.5b17eccacd7cf.jpg',
-    'description': '',
+    'description': {'ru': 'Описание первого проекта', 'en': 'Description 1 project'},
     'demoLink': '',
     'codeLink': '',
     'stack': ['JS', 'React', 'БЭМ', ]
   },
   {
-    'title': 'Название пятого проекта',
+    'title': {'ru': 'Название первого проекта', 'en': 'Name 1 project'},
     'image': 'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/698af566494985.5b17eccacd7cf.jpg',
-    'description': '',
+    'description': {'ru': 'Описание первого проекта', 'en': 'Description 1 project'},
     'demoLink': '',
     'codeLink': '',
     'stack': ['JS', 'React', 'БЭМ', ]
   },
   {
-    'title': 'Название шестого проекта',
+    'title': {'ru': 'Название первого проекта', 'en': 'Name 1 project'},
     'image': 'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/698af566494985.5b17eccacd7cf.jpg',
-    'description': '',
+    'description': {'ru': 'Описание первого проекта', 'en': 'Description 1 project'},
     'demoLink': '',
     'codeLink': '',
     'stack': ['JS', 'React', 'БЭМ', ]

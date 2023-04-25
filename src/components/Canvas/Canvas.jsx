@@ -1,10 +1,11 @@
-import { useState, useRef, useEffect } from 'react';
-import './Canvas.css'
+import React, { useState, useRef, useEffect } from 'react';
+import './Canvas.css';
 
 function Canvas(props) {
   const [isDrawing, setIsDrawing] = useState(false);
   const canvasRef = useRef(null);
-  const cellSize = 15; // размер пикселя
+  const cellSize = 70; // размер пикселя
+  const colors = ['#ffc0cb', '#90ee90', '#add8e6', '#e6c9ff', '#b0e0e6']; // массив из 6 пастельных цветов
 
   const handleMouseDown = (e) => {
     setIsDrawing(true);
@@ -25,7 +26,8 @@ function Canvas(props) {
     const ctx = canvas.getContext('2d');
     const x = Math.floor((e.clientX - canvas.offsetLeft) / cellSize);
     const y = Math.floor((e.clientY - canvas.offsetTop) / cellSize);
-    ctx.fillStyle = '#000000';
+    const color = colors[Math.floor(Math.random() * colors.length)]; // выбираем случайный цвет из массива
+    ctx.fillStyle = color; // устанавливаем выбранный цвет
     ctx.fillRect(x * cellSize, y * cellSize, cellSize, cellSize);
   };
 
