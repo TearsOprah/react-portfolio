@@ -12,9 +12,9 @@ export default function Header({ setCurrentLang,
                                  handleMenuClick,
                                  isOpenMenu }) {
   const navLinks = [
-    { title: texts[currentLang].home, path: "/", color: "red" },
-    { title: texts[currentLang].projects, path: "/projects", color: "green" },
-    { title: texts[currentLang].contacts, path: "/contacts", color: "blue" },
+    { title: texts[currentLang].home, path: "/", color: "#C778DD" },
+    { title: texts[currentLang].projects, path: "/projects", color: "#ff3f69" },
+    { title: texts[currentLang].contacts, path: "/contacts", color: "#ea6e0e" },
   ];
 
   const handleLang = () => {

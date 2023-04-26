@@ -4,7 +4,7 @@ import './Canvas.css';
 function Canvas(props) {
   const [isDrawing, setIsDrawing] = useState(false);
   const canvasRef = useRef(null);
-  const cellSize = 70; // размер пикселя
+  const cellSize = 40; // размер пикселя
   const colors = ['#ffc0cb', '#90ee90', '#add8e6', '#e6c9ff', '#b0e0e6']; // массив из 6 пастельных цветов
 
   const handleMouseDown = (e) => {
