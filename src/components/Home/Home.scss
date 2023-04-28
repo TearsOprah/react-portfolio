@@ -1,7 +1,7 @@
 .home {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 60px;
 }
 
 .presentation-container {
@@ -51,12 +51,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 18px;
 }
 
 .projects-link {
   color: var(--text-color);
   font-weight: 300;
-  font-size: 18px;
 }
 
 .projects-list {
@@ -83,6 +83,10 @@
   width: 100%;
 }
 
+.project-title {
+  font-size: 18px;
+}
+
 .contacts-container {
 
 }
@@ -105,4 +109,8 @@
 
 .button:hover {
   color: var(--highlight-color);
+}
+
+.skills-title {
+  font-size: 28px;
 }

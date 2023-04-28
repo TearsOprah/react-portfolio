@@ -33,6 +33,10 @@ export default function Home({ currentLang, handleLinkClick }) {
         </div>
       </section>
 
+      <section className={'skills-container'}>
+        <h3 className={'skills-title'}>{texts[currentLang].skills}</h3>
+      </section>
+
       <section className="contacts-container">
         <p className="contacts-description"></p>
         <div className="contacts-list">
