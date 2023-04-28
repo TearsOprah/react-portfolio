@@ -12,18 +12,35 @@
   justify-content: space-between;
   width: 100%;
   align-items: center;
+
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+    gap: 25px;
+  }
 }
 
 .footer__left-block {
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+  @media screen and (max-width: 700px) {
+    text-align: center;
+  }
 }
 
 .footer__info {
   display: flex;
   gap: 20px;
   align-items: center;
+
+  @media screen and (max-width: 700px) {
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 550px) {
+    flex-direction: column;
+  }
 }
 
 .footer__right-block {
