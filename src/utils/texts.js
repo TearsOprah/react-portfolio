@@ -11,6 +11,8 @@ const texts = {
     linkToProjects: 'View all',
     tagline: 'Adventures in Code: My Journey in Web Development',
     media: 'Media',
+    contactsMessage: 'Don\'t hesitate to contact me regarding collaboration, I am open to full-time or project-based work opportunities.',
+    messageMeHere: 'Message me here',
   },
   ru: {
     home: "Главная",
@@ -24,6 +26,8 @@ const texts = {
     linkToProjects: 'Посмотреть все',
     tagline: 'Приключения в коде: мое путешествие в веб-разработке',
     media: 'Медиа',
+    contactsMessage: 'Не стесняйтесь написать мне по поводу сотрудничества, я рассмотрю любые предложения о фулл-тайм либо попроектной работе.',
+    messageMeHere: 'Напишите мне тут',
   },
 }
 

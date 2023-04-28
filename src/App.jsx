@@ -56,7 +56,7 @@ function App() {
           <Route path={'/'} element={<Home currentLang={currentLang}
                                            handleLinkClick={handleLinkClick} />} />
           <Route path={'/projects'} element={<Projects currentLang={currentLang} />} />
-          <Route path={'/contacts'} element={<Contacts />} />
+          <Route path={'/contacts'} element={<Contacts currentLang={currentLang} />} />
           <Route path={'*'} element={<NotFound />} />
         </Routes>
         <Footer currentLang={currentLang} />
