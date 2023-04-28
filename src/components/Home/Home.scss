@@ -81,6 +81,11 @@
 
 .project-image {
   width: 100%;
+  transition: box-shadow .3s ease;
+}
+
+.project-image:hover {
+  box-shadow: 0 0 0 2px var(--highlight-color);
 }
 
 .project-title {

@@ -13,12 +13,12 @@ export default function Project({ projects, currentLang }) {
   return (
     <section className="project">
       <h2 className={'project__title'}>{project.title[currentLang]}</h2>
-      <img className={'project__image'} src={project.image}/>
+      <img className={'project__image'} src={project.image} alt={project.title[currentLang]}/>
       <p className={'project__description'}>{project.description[currentLang]}</p>
       <div className={'project__stack'}>
         {texts[currentLang].tech}:
         {project.stack.map((item, i) =>
-          <span>{item}</span>
+          <span key={i}>{item}</span>
         )}
       </div>
       <div className={'project__links'}>
