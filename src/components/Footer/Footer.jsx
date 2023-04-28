@@ -2,6 +2,7 @@ import texts from "../../utils/texts.js";
 import React from "react";
 import './Footer.scss';
 import imgLogo from "../../assets/white.gif";
+import media from "../../utils/media.js";
 
 export default function Footer({currentLang}) {
   return (
@@ -23,9 +24,9 @@ export default function Footer({currentLang}) {
         <div className={'footer__right-block'}>
           <h2 className={'footer__links-title'}>{texts[currentLang].media}</h2>
           <div className={'footer__links'}>
-            <a className={'footer__link'}><img className={'footer__link-icon'} src={'https://cdn-icons-png.flaticon.com/512/25/25231.png'} /></a>
-            <a className={'footer__link'}><img className={'footer__link-icon'} src={'https://cdn-icons-png.flaticon.com/512/25/25231.png'} /></a>
-            <a className={'footer__link'}><img className={'footer__link-icon'} src={'https://cdn-icons-png.flaticon.com/512/25/25231.png'} /></a>
+            {media.map((item, i) =>
+              <a key={i} href={item[0]} target={'_blank'} className={'footer__link'}><img className={'footer__link-icon'} src={item[1]} /></a>
+            )}
           </div>
         </div>
 
