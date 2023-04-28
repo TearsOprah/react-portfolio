@@ -43,7 +43,12 @@
 }
 
 .footer__email {
+  pointer-events: all;
+  user-select: text;
+}
 
+.footer__email::selection {
+  background-color: var(--highlight-color);
 }
 
 .footer__logo {
