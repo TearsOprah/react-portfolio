@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 import projects from "../../utils/projects.js";
 import "./Home.scss"
 import birdsImg from "../../assets/birds.png"
+import skills from "../../utils/skills.js";
 
 export default function Home({ currentLang, handleLinkClick }) {
   return (
@@ -33,8 +34,18 @@ export default function Home({ currentLang, handleLinkClick }) {
         </div>
       </section>
 
-      <section className={'skills-container'}>
+      <section className={'skills'}>
         <h3 className={'skills-title'}>{texts[currentLang].skills}</h3>
+        <div className={'skills-container'}>
+          {skills.map((skill, i) =>
+            <div className={'skill-block'} key={i}>
+              <h4 className={'skill-title'}>{skill.label[currentLang]}</h4>
+              <div className={'skill-items'}>
+                {skill.items.map((item, i) => <label key={i}>{item}</label>)}
+              </div>
+            </div>
+          )}
+        </div>
       </section>
 
       <section className="contacts-container">

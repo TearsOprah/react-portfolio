@@ -111,6 +111,44 @@
   color: var(--highlight-color);
 }
 
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
 .skills-title {
   font-size: 28px;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 950px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: 700px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.skill-block {
+  border: 2px solid var(--text-color);
+}
+
+.skill-title {
+  padding: 10px;
+  font-size: 18px;
+}
+
+.skill-items {
+  padding: 10px;
+  border-top: 2px solid var(--text-color);
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
