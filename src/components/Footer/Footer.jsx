@@ -3,8 +3,9 @@ import React from "react";
 import './Footer.scss';
 import imgLogo from "../../assets/white.gif";
 import media from "../../utils/media.js";
+import {Link} from "react-router-dom";
 
-export default function Footer({currentLang}) {
+export default function Footer({ currentLang, handleLinkClick }) {
   return (
     <footer className={'footer'}>
 
@@ -13,7 +14,9 @@ export default function Footer({currentLang}) {
         <div className={'footer__left-block'}>
           <div className={'footer__info'}>
             <div className={'footer__branding'}>
-              <h2 className={"footer__title"}>TearsOprah</h2>
+              <Link to={'/'} onClick={() => handleLinkClick('/')}>
+                <h2 className={"footer__title"}>TearsOprah</h2>
+              </Link>
               <img className={"footer__logo"} src={imgLogo}/>
             </div>
             <p className={'footer__email'}>qmeshokp@mail.ru</p>

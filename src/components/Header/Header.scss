@@ -12,7 +12,7 @@
   align-items: center;
   gap: 10px;
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 900px) {
     align-self: flex-start;
   }
 }
@@ -25,6 +25,7 @@
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
+  color: var(--text-color);
 
   @media screen and (max-width: 900px) {
     font-weight: 500;
@@ -53,7 +54,7 @@
   background-color: transparent;
   cursor: pointer;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 880px) {
     display: block;
   }
 }
@@ -63,7 +64,7 @@
   gap: 20px;
   list-style-type: none;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 880px) {
     display: none;
   }
 }
@@ -87,8 +88,7 @@
   font-size: 18px;
   color: var(--text-color);
 
-  @media screen and (max-width: 900px) {
-    font-weight: 500;
+  @media screen and (max-width: 1000px) {
     font-size: 16px;
   }
 }

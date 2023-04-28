@@ -24,7 +24,9 @@ export default function Header({ setCurrentLang,
   return (
     <header className="header">
       <div className={"header__branding"}>
-        <h2 className={"header__title"}>TearsOprah</h2>
+        <Link to={'/'} onClick={() => handleLinkClick('/')}>
+          <h2 className={"header__title"}>TearsOprah</h2>
+        </Link>
         <img className={"header__logo"} src={imgLogoWhite}/>
       </div>
 

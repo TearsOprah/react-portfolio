@@ -14,6 +14,9 @@ const texts = {
     contactsMessage: 'Don\'t hesitate to contact me regarding collaboration, I am open to full-time or project-based work opportunities.',
     messageMeHere: 'Message me here',
     skills: 'Skills',
+    demo: 'Demo',
+    code: 'Code',
+    tech: 'Technologies',
   },
   ru: {
     home: "Главная",
@@ -30,6 +33,9 @@ const texts = {
     contactsMessage: 'Не стесняйтесь написать мне по поводу сотрудничества, я рассмотрю любые предложения о фулл-тайм либо попроектной работе.',
     messageMeHere: 'Напишите мне тут',
     skills: 'Навыки',
+    demo: 'Демо',
+    code: 'Код',
+    tech: 'Технологии',
   },
 }
 

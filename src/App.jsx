@@ -6,7 +6,7 @@ import NotFound from "./components/NotFound/NotFound";
 import Contacts from "./components/Contacts/Contacts";
 import Footer from "./components/Footer/Footer";
 import {useState, useEffect} from "react";
-import './App.css'
+import './App.scss'
 import Canvas from "./components/Canvas/Canvas.jsx";
 import Project from "./components/Project/Project";
 import projects from "./utils/projects.js";
@@ -62,7 +62,7 @@ function App() {
           <Route path="/projects/:id" element={<Project currentLang={currentLang} projects={projects} />} />
           <Route path={'*'} element={<NotFound />} />
         </Routes>
-        <Footer currentLang={currentLang} />
+        <Footer handleLinkClick={handleLinkClick} currentLang={currentLang} />
       </div>
     </>
   )

@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 import './Project.scss'
+import texts from "../../utils/texts.js";
 
 export default function Project({ projects, currentLang }) {
   const params = useParams();
@@ -12,16 +13,17 @@ export default function Project({ projects, currentLang }) {
   return (
     <section className="project">
       <h2 className={'project__title'}>{project.title[currentLang]}</h2>
-      <p className={'project__description'}>{project.description[currentLang]}</p>
       <img className={'project__image'} src={project.image}/>
+      <p className={'project__description'}>{project.description[currentLang]}</p>
       <div className={'project__stack'}>
+        {texts[currentLang].tech}:
         {project.stack.map((item, i) =>
           <span>{item}</span>
         )}
       </div>
       <div className={'project__links'}>
-        <a href={project.demoLink} target={'_blank'} className={'project__button button'}>Демо</a>
-        <a href={project.codeLink} target={'_blank'} className={'project__button button'}>Код</a>
+        <a href={project.demoLink} target={'_blank'} className={'project__button button'}>{texts[currentLang].demo}</a>
+        <a href={project.codeLink} target={'_blank'} className={'project__button button'}>{texts[currentLang].code}</a>
       </div>
     </section>
   );
