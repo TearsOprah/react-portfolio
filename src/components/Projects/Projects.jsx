@@ -9,7 +9,7 @@ export default function Projects({ currentLang, handleLinkClick }) {
         <h2>{texts[currentLang].projects}</h2>
       </div>
       <div className="projects-list">
-        {projects.reverse().map((project, i) =>
+        {projects.map((project, i) =>
           <div key={i} className="projects-list-item">
             <Link to={`/projects/${project.id}`} onClick={() => handleLinkClick('/project')}>
               <img className="project-image" src={project.image} alt={project.title[currentLang]} />
