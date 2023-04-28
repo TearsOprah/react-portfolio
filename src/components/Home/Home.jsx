@@ -23,14 +23,19 @@ export default function Home({ currentLang, handleLinkClick }) {
       <section className="projects-container">
         <div className="projects-header">
           <h2>{texts[currentLang].projects}</h2>
-          <Link className="projects-link button" onClick={() => handleLinkClick('/projects')} to={'/projects'}>{texts[currentLang].linkToProjects}</Link>
+          <Link className="projects-link button" to="/projects" onClick={() => handleLinkClick('/projects')}>
+            {texts[currentLang].linkToProjects}
+          </Link>
         </div>
         <div className="projects-list">
-          {projects.slice(3).reverse().map((project, i) =>
+          {projects.slice(3).reverse().map((project, i) => (
             <div key={i} className="projects-list-item">
-              <img className="project-image" src={project.image} />
-              <h3 className="project-title">{project.title[currentLang]}</h3>
-            </div>)}
+              <Link to={`/projects/${project.id}`} onClick={() => handleLinkClick('/project')}>
+                <img className="project-image" src={project.image} alt={project.title[currentLang]} />
+                <h3 className="project-title">{project.title[currentLang]}</h3>
+              </Link>
+            </div>
+          ))}
         </div>
       </section>
 

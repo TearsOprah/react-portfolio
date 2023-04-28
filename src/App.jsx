@@ -8,6 +8,8 @@ import Footer from "./components/Footer/Footer";
 import {useState, useEffect} from "react";
 import './App.css'
 import Canvas from "./components/Canvas/Canvas.jsx";
+import Project from "./components/Project/Project";
+import projects from "./utils/projects.js";
 
 function App() {
 
@@ -55,8 +57,9 @@ function App() {
         <Routes>
           <Route path={'/'} element={<Home currentLang={currentLang}
                                            handleLinkClick={handleLinkClick} />} />
-          <Route path={'/projects'} element={<Projects currentLang={currentLang} />} />
+          <Route path={'/projects'} element={<Projects currentLang={currentLang} handleLinkClick={handleLinkClick} />} />
           <Route path={'/contacts'} element={<Contacts currentLang={currentLang} />} />
+          <Route path="/projects/:id" element={<Project currentLang={currentLang} projects={projects} />} />
           <Route path={'*'} element={<NotFound />} />
         </Routes>
         <Footer currentLang={currentLang} />
