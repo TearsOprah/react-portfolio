@@ -17,7 +17,7 @@ const projects = [
   {
     'title': {'ru': 'место на React', 'en': 'mesto-react'},
     'image': mestoJS,
-    'description': {'ru': 'Интерактивной страница, куда можно добавлять фотографии, удалять их и ставить лайки на свои и чужие карточки', 'en': 'An interactive page where you can add photos, delete them and put likes on your own and other people\'s cards'},
+    'description': {'ru': 'Интерактивная страница, куда можно добавлять фотографии, удалять их и ставить лайки на свои и чужие карточки', 'en': 'An interactive page where you can add photos, delete them and put likes on your own and other people\'s cards'},
     'demoLink': 'https://mesto-react-opal.vercel.app/',
     'codeLink': 'https://github.com/TearsOprah/mesto-react',
     'stack': ['JS', 'React', 'BEM', 'OOP', 'Api', 'Adaptive'],
@@ -26,7 +26,7 @@ const projects = [
   {
     'title': {'ru': 'место на React c авторизацией', 'en': 'mesto-react with auth'},
     'image': mestoAuth,
-    'description': {'ru': 'Интерактивной страница, куда можно добавлять фотографии, удалять их и ставить лайки на свои и чужие карточки. Регистрация и авторизация пользователей', 'en': 'An interactive page where you can add photos, delete them and put likes on your own and other people\'s cards. Registration and authorization of users'},
+    'description': {'ru': 'Интерактивная страница, куда можно добавлять фотографии, удалять их и ставить лайки на свои и чужие карточки. Регистрация и авторизация пользователей', 'en': 'An interactive page where you can add photos, delete them and put likes on your own and other people\'s cards. Registration and authorization of users'},
     'demoLink': 'https://react-mesto-auth-xi.vercel.app/sign-in',
     'codeLink': 'https://github.com/TearsOprah/react-mesto-auth',
     'stack': ['JS', 'React', 'BEM', 'OOP', 'Api', 'Adaptive',],
@@ -35,7 +35,7 @@ const projects = [
   {
     'title': {'ru': 'место', 'en': 'mesto'},
     'image': mestoJS,
-    'description': {'ru': 'Интерактивной страница, куда можно добавлять фотографии, удалять их и ставить лайки на свои и чужие карточки', 'en': 'An interactive page where you can add photos, delete them and put likes on your own and other people\'s cards'},
+    'description': {'ru': 'Интерактивная страница, куда можно добавлять фотографии, удалять их и ставить лайки на свои и чужие карточки', 'en': 'An interactive page where you can add photos, delete them and put likes on your own and other people\'s cards'},
     'demoLink': 'https://tearsoprah.github.io/mesto/',
     'codeLink': 'https://github.com/TearsOprah/mesto',
     'stack': ['JS', 'Adaptive', 'BEM', 'OOP', 'Webpack', 'Api'],
