@@ -1,17 +1,23 @@
 .contacts {
-
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .contacts__title {
-
+  font-size: 24px;
 }
 
 .contacts__description {
-
+  font-size: 22px;
+  line-height: 28px;
 }
 
 .contacts__block {
-
+  pointer-events: all;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .contacts__list-title {
@@ -19,12 +25,15 @@
 }
 
 .contacts__links {
-
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .contacts__links-item {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
 .contacts__link-image {
@@ -32,5 +41,11 @@
 }
 
 .contacts__link {
-  user-select: all;
+  user-select: text;
+  font-size: 18px;
 }
+
+.contacts__link::selection {
+  background-color: var(--highlight-color);
+}
+
