@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import texts from "../../utils/texts.js";
 import "./Header.scss";
-import imgLogoBlack from '../../assets/black.gif'
 import imgLogoWhite from '../../assets/white.gif'
+import menuImg from '../../assets/menu.svg'
 
 export default function Header({ setCurrentLang,
                                  currentLang,
@@ -30,7 +30,7 @@ export default function Header({ setCurrentLang,
 
       <nav className="nav">
         <button className="menu-icon" onClick={handleMenuClick}>
-          Меню
+          <img src={menuImg}/>
         </button>
 
         <ul className={`nav__list ${isOpenMenu ? "nav__list--open" : ""}`}>
