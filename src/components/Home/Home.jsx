@@ -12,7 +12,7 @@ export default function Home({ currentLang, handleLinkClick }) {
           <h1 className={'presentation-name'}>{`${texts[currentLang].name}`}</h1>
           <p className={'presentation-name'}>{`${texts[currentLang].profession}`}</p>
           <p className={'presentation-tagline'}>{`${texts[currentLang].tagline}`}</p>
-          <button className={'presentation-button button'}>{texts[currentLang].contactButton}</button>
+          <Link className="presentation-button button" onClick={() => handleLinkClick('/contacts')} to={'/contacts'}>{texts[currentLang].contactButton}</Link>
         </div>
         <div>
           <img className={'presentation-image'} src={birdsImg} alt={'portfolio author photo'} />
