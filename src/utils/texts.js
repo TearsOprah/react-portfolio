@@ -17,6 +17,7 @@ const texts = {
     demo: 'Demo',
     code: 'Code',
     tech: 'Technologies',
+    testTasks: 'Test tasks',
   },
   ru: {
     home: "Главная",
@@ -36,6 +37,7 @@ const texts = {
     demo: 'Демо',
     code: 'Код',
     tech: 'Технологии',
+    testTasks: 'Тестовые задания',
   },
 }
 

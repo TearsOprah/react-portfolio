@@ -10,6 +10,8 @@ import './App.scss'
 import Canvas from "./components/Canvas/Canvas.jsx";
 import Project from "./components/Project/Project";
 import projects from "./utils/projects.js";
+import {testTasks} from "./utils/testTasks.js";
+import TestTask from "./components/TestTask/TestTask.jsx";
 
 function App() {
 
@@ -74,6 +76,9 @@ function App() {
           <Route path="/projects/:id" element={<Project currentLang={currentLang}
                                                         projects={projects}
                                                         animateProps={animateProps}/>} />
+          <Route path="/tests/:id" element={<TestTask currentLang={currentLang}
+                                                     testTasks={testTasks}
+                                                     animateProps={animateProps}/>} />
           <Route path={'*'} element={<NotFound />} />
         </Routes>
         <Footer handleLinkClick={handleLinkClick}
