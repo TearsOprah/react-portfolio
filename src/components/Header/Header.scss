@@ -5,6 +5,10 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: 450px) {
+    flex-direction: column;
+  }
 }
 
 .header__branding {
@@ -44,6 +48,12 @@
   display: flex;
   flex-direction: column;
   align-items: end;
+
+  @media screen and (max-width: 450px) {
+    justify-self: start;
+    align-self: start;
+    align-items: start;
+  }
 }
 
 .menu-icon {
@@ -73,6 +83,10 @@
   display: flex;
   flex-direction: column;
   align-items: end;
+
+  @media screen and (max-width: 450px) {
+    align-items: start;
+  }
 }
 
 .nav__item {
