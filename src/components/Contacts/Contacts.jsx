@@ -1,10 +1,13 @@
 import texts from "../../utils/texts.js";
 import socialLinks from "../../utils/links.js";
 import "./Contacts.scss";
+import { motion } from "framer-motion";
 
-export default function Contacts({currentLang}) {
+export default function Contacts({currentLang, animateProps}) {
   return (
-    <div className={'contacts'}>
+    <motion.div className={'contacts'}
+                {...animateProps}
+    >
       <h2 className={'contacts__title'}>{texts[currentLang].contacts}</h2>
       <p className={'contacts__description'}>{texts[currentLang].contactsMessage}</p>
       <div className={'contacts__block'}>
@@ -18,6 +21,6 @@ export default function Contacts({currentLang}) {
           )}
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }

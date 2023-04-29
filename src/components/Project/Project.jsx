@@ -1,8 +1,9 @@
 import { useParams } from 'react-router-dom';
 import './Project.scss'
 import texts from "../../utils/texts.js";
+import { motion } from "framer-motion";
 
-export default function Project({ projects, currentLang }) {
+export default function Project({ projects, currentLang, animateProps }) {
   const params = useParams();
   const project = projects[parseInt(params.id)];
 
@@ -11,7 +12,7 @@ export default function Project({ projects, currentLang }) {
   }
 
   return (
-    <section className="project">
+    <motion.section className="project" {...animateProps}>
       <h2 className={'project__title'}>{project.title[currentLang]}</h2>
       <img className={'project__image'} src={project.image} alt={project.title[currentLang]}/>
       <p className={'project__description'}>{project.description[currentLang]}</p>
@@ -25,6 +26,6 @@ export default function Project({ projects, currentLang }) {
         <a href={project.demoLink} target={'_blank'} className={'project__button button'}>{texts[currentLang].demo}</a>
         <a href={project.codeLink} target={'_blank'} className={'project__button button'}>{texts[currentLang].code}</a>
       </div>
-    </section>
+    </motion.section>
   );
 }

@@ -41,7 +41,14 @@ function App() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // рисовалка
+  // настройки анимации
+
+  const animateProps = {
+    initial: { opacity: 0 },
+    animate: { opacity: 1 },
+    transition: { duration: 0.5 }
+  };
+
 
   return (
     <>
@@ -53,16 +60,25 @@ function App() {
                 activeLink={activeLink}
                 handleLinkClick={handleLinkClick}
                 handleMenuClick={handleMenuClick}
+                animateProps={animateProps}
         />
         <Routes>
           <Route path={'/'} element={<Home currentLang={currentLang}
-                                           handleLinkClick={handleLinkClick} />} />
-          <Route path={'/projects'} element={<Projects currentLang={currentLang} handleLinkClick={handleLinkClick} />} />
-          <Route path={'/contacts'} element={<Contacts currentLang={currentLang} />} />
-          <Route path="/projects/:id" element={<Project currentLang={currentLang} projects={projects} />} />
+                                           handleLinkClick={handleLinkClick}
+                                           animateProps={animateProps}/>} />
+          <Route path={'/projects'} element={<Projects currentLang={currentLang}
+                                                       handleLinkClick={handleLinkClick}
+                                                       animateProps={animateProps} />} />
+          <Route path={'/contacts'} element={<Contacts currentLang={currentLang}
+                                                       animateProps={animateProps}/>} />
+          <Route path="/projects/:id" element={<Project currentLang={currentLang}
+                                                        projects={projects}
+                                                        animateProps={animateProps}/>} />
           <Route path={'*'} element={<NotFound />} />
         </Routes>
-        <Footer handleLinkClick={handleLinkClick} currentLang={currentLang} />
+        <Footer handleLinkClick={handleLinkClick}
+                currentLang={currentLang}
+                animateProps={animateProps} />
       </div>
     </>
   )

@@ -4,13 +4,15 @@ import texts from "../../utils/texts.js";
 import "./Header.scss";
 import imgLogoWhite from '../../assets/white.gif'
 import menuImg from '../../assets/menu.svg'
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Header({ setCurrentLang,
                                  currentLang,
                                  activeLink,
                                  handleLinkClick,
                                  handleMenuClick,
-                                 isOpenMenu }) {
+                                 isOpenMenu,
+                                 animateProps }) {
   const navLinks = [
     { title: texts[currentLang].home, path: "/", color: "#C778DD" },
     { title: texts[currentLang].projects, path: "/projects", color: "#ff3f69" },
@@ -22,7 +24,7 @@ export default function Header({ setCurrentLang,
   };
 
   return (
-    <header className="header">
+    <motion.header className="header" {...animateProps}>
       <div className={"header__branding"}>
         <Link to={'/'} onClick={() => handleLinkClick('/')}>
           <h2 className={"header__title"}>TearsOprah</h2>
@@ -65,6 +67,6 @@ export default function Header({ setCurrentLang,
           </button>
         </ul>
       </nav>
-    </header>
+    </motion.header>
   );
 }

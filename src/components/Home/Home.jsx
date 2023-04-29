@@ -4,10 +4,13 @@ import projects from "../../utils/projects.js";
 import "./Home.scss"
 import birdsImg from "../../assets/birds.png"
 import skills from "../../utils/skills.js";
+import { motion } from "framer-motion";
 
-export default function Home({ currentLang, handleLinkClick }) {
+export default function Home({ currentLang, handleLinkClick, animateProps }) {
   return (
-    <main className={'home'}>
+    <motion.main className={'home'}
+                 {...animateProps}
+    >
       <div className={'presentation-container'}>
         <div className={'presentation-info'}>
           <h1 className={'presentation-name'}>{`${texts[currentLang].name}`}</h1>
@@ -60,6 +63,6 @@ export default function Home({ currentLang, handleLinkClick }) {
         </div>
       </section>
 
-    </main>
+    </motion.main>
   )
 }

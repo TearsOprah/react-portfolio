@@ -4,10 +4,13 @@ import './Footer.scss';
 import imgLogo from "../../assets/white.gif";
 import media from "../../utils/media.js";
 import {Link} from "react-router-dom";
+import { motion } from "framer-motion";
 
-export default function Footer({ currentLang, handleLinkClick }) {
+export default function Footer({ currentLang, handleLinkClick, animateProps }) {
   return (
-    <footer className={'footer'}>
+    <motion.footer className={'footer'}
+                   {...animateProps}
+    >
 
       <div className={'footer__container'}>
 
@@ -37,6 +40,6 @@ export default function Footer({ currentLang, handleLinkClick }) {
 
       <p className={'footer__copyright'}>{`© ${texts[currentLang].madeBy}. ${new Date().getFullYear()}`}</p>
 
-    </footer>
+    </motion.footer>
   )
 }
