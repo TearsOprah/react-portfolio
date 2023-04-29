@@ -105,6 +105,13 @@ export default function Header({ setCurrentLang,
                 </Link>
               </li>
             ))}
+            <button
+              className={"header__button button"}
+              type="button"
+              onClick={handleLang}
+            >
+              {currentLang === "ru" ? "en" : "ru"}
+            </button>
           </ul>
         )}
       </nav>
