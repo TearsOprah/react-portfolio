@@ -26,47 +26,89 @@ export default function Header({ setCurrentLang,
   return (
     <motion.header className="header" {...animateProps}>
       <div className={"header__branding"}>
-        <Link to={'/'} onClick={() => handleLinkClick('/')}>
+        <Link to={"/"} onClick={() => handleLinkClick("/")}>
           <h2 className={"header__title"}>TearsOprah</h2>
         </Link>
-        <img className={"header__logo"} src={imgLogoWhite}/>
+        <img className={"header__logo"} src={imgLogoWhite} alt="Logo" />
       </div>
 
       <nav className="nav">
         <button className="menu-icon" onClick={handleMenuClick}>
-          <img src={menuImg}/>
+          <img src={menuImg} alt="Menu" />
         </button>
 
-        <ul className={`nav__list ${isOpenMenu ? "nav__list--open" : ""}`}>
-          {navLinks.map((link, index) => (
-            <li
-              className={`nav__item ${
-                activeLink === link.path ? "nav__item-active" : ""
+        <AnimatePresence>
+          {isOpenMenu && (
+            <motion.ul
+              className={`nav__list motion ${
+                isOpenMenu ? "nav__list--open" : ""
               }`}
-              key={index}
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.5 }}
             >
-              <div
-                className="nav__icon"
-                style={{ backgroundColor: link.color }}
-              ></div>
-              <Link
-                to={link.path}
-                className={`nav__link`}
-                onClick={() => handleLinkClick(link.path)}
+              {navLinks.map((link, index) => (
+                <motion.li
+                  className={`nav__item ${
+                    activeLink === link.path ? "nav__item-active" : ""
+                  }`}
+                  key={index}
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                >
+                  <div
+                    className="nav__icon"
+                    style={{ backgroundColor: link.color }}
+                  ></div>
+                  <Link
+                    to={link.path}
+                    className={`nav__link`}
+                    onClick={() => handleLinkClick(link.path)}
+                  >
+                    {link.title}
+                  </Link>
+                </motion.li>
+              ))}
+              <button
+                className={"header__button button"}
+                type="button"
+                onClick={handleLang}
               >
-                {link.title}
-              </Link>
-            </li>
-          ))}
-          <button
-            className={"header__button button"}
-            type="button"
-            onClick={handleLang}
-          >
-            {currentLang === "ru" ? "en" : "ru"}
-          </button>
-        </ul>
+                {currentLang === "ru" ? "en" : "ru"}
+              </button>
+            </motion.ul>
+          )}
+        </AnimatePresence>
+
+        {!isOpenMenu && (
+          <ul className={`nav__list`}>
+            {navLinks.map((link, index) => (
+              <li
+                className={`nav__item ${
+                  activeLink === link.path ? "nav__item-active" : ""
+                }`}
+                key={index}
+              >
+                <div
+                  className="nav__icon"
+                  style={{ backgroundColor: link.color }}
+                ></div>
+                <Link
+                  to={link.path}
+                  className={`nav__link`}
+                  onClick={() => handleLinkClick(link.path)}
+                >
+                  {link.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        )}
       </nav>
     </motion.header>
   );
+
 }
