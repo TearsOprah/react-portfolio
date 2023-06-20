@@ -2,9 +2,9 @@ import texts from "../../utils/texts.js";
 import {Link} from "react-router-dom";
 import projects from "../../utils/projects.js";
 import "./Home.scss"
-import birdsImg from "../../assets/birds.png"
 import skills from "../../utils/skills.js";
 import { motion } from "framer-motion";
+import Model from "../Model/Model";
 
 export default function Home({ currentLang, handleLinkClick, animateProps }) {
   return (
@@ -18,9 +18,7 @@ export default function Home({ currentLang, handleLinkClick, animateProps }) {
           <p className={'presentation-tagline'}>{`${texts[currentLang].tagline}`}</p>
           <Link className="presentation-button button" onClick={() => handleLinkClick('/contacts')} to={'/contacts'}>{texts[currentLang].contactButton}</Link>
         </div>
-        <div>
-          <img className={'presentation-image'} src={birdsImg} alt={'portfolio author photo'} />
-        </div>
+        <Model />
       </div>
 
       <section className="projects-container">

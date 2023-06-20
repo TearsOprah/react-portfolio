@@ -7,7 +7,6 @@ import Contacts from "./components/Contacts/Contacts";
 import Footer from "./components/Footer/Footer";
 import {useState, useEffect} from "react";
 import './App.scss'
-import Canvas from "./components/Canvas/Canvas.jsx";
 import Project from "./components/Project/Project";
 import projects from "./utils/projects.js";
 import {testTasks} from "./utils/testTasks.js";
@@ -54,7 +53,7 @@ function App() {
 
   return (
     <>
-      <Canvas />
+      {/*<Canvas />*/}
       <div className="wrapper">
         <Header setCurrentLang={setCurrentLang}
                 currentLang={currentLang}
