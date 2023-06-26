@@ -11,6 +11,7 @@ import Project from "./components/Project/Project";
 import projects from "./utils/projects.js";
 import {testTasks} from "./utils/testTasks.js";
 import TestTask from "./components/TestTask/TestTask.jsx";
+import Canvas from "./components/Canvas/Canvas.jsx";
 
 function App() {
 
@@ -53,7 +54,7 @@ function App() {
 
   return (
     <>
-      {/*<Canvas />*/}
+      <Canvas />
       <div className="wrapper">
         <Header setCurrentLang={setCurrentLang}
                 currentLang={currentLang}
