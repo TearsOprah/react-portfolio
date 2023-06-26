@@ -13,8 +13,8 @@ export default function TestTask({ testTasks, currentLang, animateProps }) {
   return (
     <motion.section className="project" {...animateProps}>
       <h2 className={'project__title'}>{project.title[currentLang]}</h2>
-      <img className={'project__image'} src={project.imageTask} alt={project.title[currentLang]}/>
-      <img className={'project__image'} src={project.image} alt={project.title[currentLang]}/>
+      {project.imageTask && <img className={'project__image'} src={project.imageTask} alt={project.title[currentLang]}/>}
+      {project.image && <img className={'project__image'} src={project.image} alt={project.title[currentLang]}/>}
       <p className={'project__description'}>{project.description[currentLang]}</p>
       <div className={'project__stack'}>
         {texts[currentLang].tech}:
