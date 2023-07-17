@@ -23,7 +23,7 @@ export default function Project({ projects, currentLang, animateProps }) {
         )}
       </div>
       <div className={'project__links'}>
-        <a href={project.demoLink} target={'_blank'} className={'project__button button'}>{texts[currentLang].demo}</a>
+        {project.demoLink ? <a href={project.demoLink} target={'_blank'} className={'project__button button'}>{texts[currentLang].demo}</a> : ''}
         <a href={project.codeLink} target={'_blank'} className={'project__button button'}>{texts[currentLang].code}</a>
       </div>
     </motion.section>

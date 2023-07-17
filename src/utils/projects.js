@@ -33,7 +33,7 @@ const projects = [
         '- asynchronous GET- and POST-requests to the API were implemented;\n\n' +
         '- authorized and unauthorized states, saving movies in the profile were worked out;\n\n' +
         '- received movies are filtered on the client side.'},
-    'demoLink': 'https://movies.tearsoprah.nomoredomains.rocks',
+    'demoLink': '',
     'codeLink': 'https://github.com/TearsOprah/movies-explorer-frontend',
     'stack': ['JS', 'React', 'Express', 'MongoDB', 'NodeJS', 'Api', 'Nginx', 'JWT', 'Postman'],
     'id': 0,
